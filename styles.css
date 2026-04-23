@@ -359,7 +359,9 @@ p { color: var(--text-2); }
   width: 380px;
   height: 380px;
   border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
-  background: radial-gradient(circle at center, #c4c9cc 0%, #a8c4b0 50%, #7ab88a 100%);
+  background: #c4c9cc;
+  border: 36px solid #8bbe99;
+  box-sizing: border-box;
   z-index: 0;
   animation: blobMorph 9s ease-in-out infinite;
 }
@@ -367,8 +369,9 @@ p { color: var(--text-2); }
 .blob-2 {
   width: 260px;
   height: 260px;
-  background: radial-gradient(circle at center, #d0d4d6 0%, #9dc4a8 60%, #7ab88a 100%);
-  opacity: 0.5;
+  background: #8bbe99;
+  opacity: 0.3;
+  border: none;
   animation: blobMorph2 11s ease-in-out infinite;
   animation-delay: -3s;
 }
