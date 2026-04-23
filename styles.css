@@ -359,7 +359,7 @@ p { color: var(--text-2); }
   width: 290px;
   height: 290px;
   border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
-  background: #7d8a92;
+  background: #c9c9c9;
   z-index: 1;
   animation: blobMorph 9s ease-in-out infinite;
 }
