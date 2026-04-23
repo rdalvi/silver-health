@@ -356,10 +356,10 @@ p { color: var(--text-2); }
 
 .blob {
   position: absolute;
-  width: 340px;
-  height: 340px;
+  width: 290px;
+  height: 290px;
   border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
-  background: #c4c9cc;
+  background: #7d8a92;
   z-index: 1;
   animation: blobMorph 9s ease-in-out infinite;
 }
@@ -367,9 +367,9 @@ p { color: var(--text-2); }
 .blob-2 {
   width: 400px;
   height: 400px;
-  background: #8bbe99;
+  background: #3d7a55;
   z-index: 0;
-  opacity: 0.7;
+  opacity: 0.85;
   animation: blobMorph2 11s ease-in-out infinite;
   animation-delay: -3s;
 }
@@ -1126,7 +1126,8 @@ p { color: var(--text-2); }
   .hero { padding-top: calc(var(--nav-h) + 48px); padding-bottom: 64px; }
   .hero-inner { grid-template-columns: 1fr; gap: 48px; }
   .hero-visual { height: 280px; }
-  .blob { width: 240px; height: 240px; }
+  .blob { width: 200px; height: 200px; }
+  .blob-2 { width: 280px; height: 280px; }
 
   .challenges-grid { grid-template-columns: 1fr 1fr; }
 
@@ -1184,8 +1185,8 @@ p { color: var(--text-2); }
   .insurance-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-links { grid-template-columns: 1fr; }
 
-  .blob { width: 260px; height: 260px; }
-  .blob-2 { width: 180px; height: 180px; }
+  .blob { width: 220px; height: 220px; }
+  .blob-2 { width: 300px; height: 300px; }
 
   .contact-form { padding: 24px; }
   .hero-actions { flex-direction: column; }
