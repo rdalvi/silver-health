@@ -40,7 +40,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
-      <a href="https://form.jotform.com/261117708248155" target="_blank" rel="noopener noreferrer" class="btn btn-primary nav-cta">Get Started</a>
+      <a href="https://form.jotform.com/261117708248155" target="_blank" rel="noopener noreferrer" onclick="return gtag_report_conversion(this.href);" class="btn btn-primary nav-cta">Get Started</a>
       <button class="hamburger" id="hamburger" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
@@ -52,7 +52,7 @@
         <li><a href="#insurance">Insurance</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#faq">FAQ</a></li>
-        <li><a href="https://form.jotform.com/261117708248155" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Get Started</a></li>
+        <li><a href="https://form.jotform.com/261117708248155" target="_blank" rel="noopener noreferrer" onclick="return gtag_report_conversion(this.href);" class="btn btn-primary">Get Started</a></li>
       </ul>
     </div>
   </header>
@@ -67,7 +67,7 @@
           <h1>Executive function treatment covered by insurance</h1>
           <p class="hero-sub">Silver Health delivers CBT-ADHD virtually with licensed therapists trained to deal with the nuances of ADHD and other issues of executive dysfunction.</p>
           <div class="hero-actions">
-            <a href="https://form.jotform.com/261117708248155" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Book a Free Consult</a>
+            <a href="https://form.jotform.com/261117708248155" target="_blank" rel="noopener noreferrer" onclick="return gtag_report_conversion(this.href);" class="btn btn-primary btn-lg">Book a Free Consult</a>
             <a href="#how-it-works" class="btn btn-ghost btn-lg">See How It Works</a>
           </div>
           <div class="hero-trust">
@@ -451,8 +451,8 @@
             <div class="contact-cta-icon" aria-hidden="true">📋</div>
             <h3>Complete Our Intake Form</h3>
             <p>Fill out our short intake form to get the process started. It takes about 5 minutes and helps us prepare for your free consultation.</p>
-            <a href="https://form.jotform.com/261117708248155" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg btn-full">Start Intake Form</a>
-            <a href="https://form.jotform.com/261117708248155" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-lg btn-full">Book Free Consultation</a>
+            <a href="https://form.jotform.com/261117708248155" target="_blank" rel="noopener noreferrer" onclick="return gtag_report_conversion(this.href);" class="btn btn-primary btn-lg btn-full">Start Intake Form</a>
+            <a href="https://form.jotform.com/261117708248155" target="_blank" rel="noopener noreferrer" onclick="return gtag_report_conversion(this.href);" class="btn btn-ghost btn-lg btn-full">Book Free Consultation</a>
             <p class="form-note">Your information stays confidential and is protected under HIPAA.</p>
           </div>
         </div>
@@ -507,6 +507,22 @@
     </div>
   </footer>
 
+  <script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-18112980300/w5rWCLih8KAcEMzK-LxD',
+        'value': 1.0,
+        'currency': 'USD',
+        'event_callback': callback
+    });
+    return false;
+  }
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
