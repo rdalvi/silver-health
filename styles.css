@@ -356,22 +356,20 @@ p { color: var(--text-2); }
 
 .blob {
   position: absolute;
-  width: 380px;
-  height: 380px;
+  width: 340px;
+  height: 340px;
   border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
   background: #c4c9cc;
-  border: 36px solid #8bbe99;
-  box-sizing: border-box;
-  z-index: 0;
+  z-index: 1;
   animation: blobMorph 9s ease-in-out infinite;
 }
 
 .blob-2 {
-  width: 260px;
-  height: 260px;
+  width: 400px;
+  height: 400px;
   background: #8bbe99;
-  opacity: 0.3;
-  border: none;
+  z-index: 0;
+  opacity: 0.7;
   animation: blobMorph2 11s ease-in-out infinite;
   animation-delay: -3s;
 }
